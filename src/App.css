@@ -14,14 +14,94 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2rem;
   color: white;
+  padding: 2rem 0;
+}
+
+.inline-btn {
+  height: 40px;
+}
+
+.teams {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin: 3rem auto;
+}
+.table-filter {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.table-wrap {
+  color: white;
+}
+
+.table-wrap table {
+  margin: auto;
+  width: 60%;
+}
+
+.table-wrap table tr td {
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.table-wrap table tr th {
+  padding: 1rem 0;
+  text-align: left;
+}
+
+button {
+  background-color: #37448c;
+  color: white;
+  font-weight: 500;
+  padding: 12px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  height: 32px;
+  margin-right: 15px;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+.current-page {
+  display: inline-block;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.pagination {
+  margin: 1rem 0;
+  padding-bottom: 2rem;
+}
+
+span.active {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+#root {
+  background-color: #282c34;
+  min-height: 100vh;
 }
 
 .App-link {
